@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ef201b529082d1f2952c1434bd96e782 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ef201b529082d1f2952c1434bd96e782" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ef201b529082d1f2952c1434bd96e782 = L.map(
+                "map_ef201b529082d1f2952c1434bd96e782",
+                {
+                    center: [37.5, -119.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_116cf3cb01338772701e2a5f21f1317a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_116cf3cb01338772701e2a5f21f1317a.addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+            var circle_marker_4d854108721ae7042cd72395c4aed676 = L.circleMarker(
+                [37.6793585, -121.8650544887129],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_31b1d2294b4f804211cbd9835b2c5631 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_85a54aac7a357cb1a80dde465d886b72 = $(`<div id="html_85a54aac7a357cb1a80dde465d886b72" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda<br><b>Total Units:</b> 1642</div>`)[0];
+                popup_31b1d2294b4f804211cbd9835b2c5631.setContent(html_85a54aac7a357cb1a80dde465d886b72);
+            
+        
+
+        circle_marker_4d854108721ae7042cd72395c4aed676.bindPopup(popup_31b1d2294b4f804211cbd9835b2c5631)
+        ;
+
+        
+    
+    
+            circle_marker_4d854108721ae7042cd72395c4aed676.bindTooltip(
+                `<div>
+                     Alameda — 1642 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4eca873796c4bc6d8d737a117602293 = L.circleMarker(
+                [39.7229885, -121.57913433615366],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.9, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_61508c5a60ac16d8d12dd0086a889fbf = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_3745b142f3529107768a0a26cd59d51a = $(`<div id="html_3745b142f3529107768a0a26cd59d51a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Butte<br><b>Total Units:</b> 345</div>`)[0];
+                popup_61508c5a60ac16d8d12dd0086a889fbf.setContent(html_3745b142f3529107768a0a26cd59d51a);
+            
+        
+
+        circle_marker_e4eca873796c4bc6d8d737a117602293.bindPopup(popup_61508c5a60ac16d8d12dd0086a889fbf)
+        ;
+
+        
+    
+    
+            circle_marker_e4eca873796c4bc6d8d737a117602293.bindTooltip(
+                `<div>
+                     Butte — 345 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4165c5365bc264dc730c47736b11962 = L.circleMarker(
+                [37.8881585, -121.91188039351027],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.72, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_0091c28b069f3c4c9f7099724573c533 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_c077fb17f03077d48dcc2b9876643c57 = $(`<div id="html_c077fb17f03077d48dcc2b9876643c57" style="width: 100.0%; height: 100.0%;"><b>County:</b> Contra Costa<br><b>Total Units:</b> 1236</div>`)[0];
+                popup_0091c28b069f3c4c9f7099724573c533.setContent(html_c077fb17f03077d48dcc2b9876643c57);
+            
+        
+
+        circle_marker_a4165c5365bc264dc730c47736b11962.bindPopup(popup_0091c28b069f3c4c9f7099724573c533)
+        ;
+
+        
+    
+    
+            circle_marker_a4165c5365bc264dc730c47736b11962.bindTooltip(
+                `<div>
+                     Contra Costa — 1236 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1166c72b531aabda1243d070bfc734b8 = L.circleMarker(
+                [36.7476835, -119.63744423833671],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.78, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_d327981d0e7158bfcaa975a4425dae30 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_6415d61b6de5f025a63dd8e1ea56c012 = $(`<div id="html_6415d61b6de5f025a63dd8e1ea56c012" style="width: 100.0%; height: 100.0%;"><b>County:</b> Fresno<br><b>Total Units:</b> 1139</div>`)[0];
+                popup_d327981d0e7158bfcaa975a4425dae30.setContent(html_6415d61b6de5f025a63dd8e1ea56c012);
+            
+        
+
+        circle_marker_1166c72b531aabda1243d070bfc734b8.bindPopup(popup_d327981d0e7158bfcaa975a4425dae30)
+        ;
+
+        
+    
+    
+            circle_marker_1166c72b531aabda1243d070bfc734b8.bindTooltip(
+                `<div>
+                     Fresno — 1139 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_775757693c2fcff942d422f04700b1e5 = L.circleMarker(
+                [40.7344595, -123.87981815650701],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.96, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_855abf231877a5e80822fe4946e91e3a = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_5efa7c1fdc2f881ede633c751f889a90 = $(`<div id="html_5efa7c1fdc2f881ede633c751f889a90" style="width: 100.0%; height: 100.0%;"><b>County:</b> Humboldt<br><b>Total Units:</b> 198</div>`)[0];
+                popup_855abf231877a5e80822fe4946e91e3a.setContent(html_5efa7c1fdc2f881ede633c751f889a90);
+            
+        
+
+        circle_marker_775757693c2fcff942d422f04700b1e5.bindPopup(popup_855abf231877a5e80822fe4946e91e3a)
+        ;
+
+        
+    
+    
+            circle_marker_775757693c2fcff942d422f04700b1e5.bindTooltip(
+                `<div>
+                     Humboldt — 198 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc939d5c821da5858d48c1ba310ef1d0 = L.circleMarker(
+                [33.0214835, -116.69406851999491],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_b13cabd31f083dca7599c5f33dcb3c38 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_404770b4afbfde6cf97dc27efab333c5 = $(`<div id="html_404770b4afbfde6cf97dc27efab333c5" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Diego<br><b>Total Units:</b> 310</div>`)[0];
+                popup_b13cabd31f083dca7599c5f33dcb3c38.setContent(html_404770b4afbfde6cf97dc27efab333c5);
+            
+        
+
+        circle_marker_fc939d5c821da5858d48c1ba310ef1d0.bindPopup(popup_b13cabd31f083dca7599c5f33dcb3c38)
+        ;
+
+        
+    
+    
+            circle_marker_fc939d5c821da5858d48c1ba310ef1d0.bindTooltip(
+                `<div>
+                     San Diego — 310 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d74a8effeb7a0db5343cea44c397d76 = L.circleMarker(
+                [37.7578055, -122.44721107584681],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.68, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_c43f0518f13dc0ddd17e8af93f34a9c0 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_c2e89825b09a3b56308c245a8e8cc6ca = $(`<div id="html_c2e89825b09a3b56308c245a8e8cc6ca" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Francisco<br><b>Total Units:</b> 534</div>`)[0];
+                popup_c43f0518f13dc0ddd17e8af93f34a9c0.setContent(html_c2e89825b09a3b56308c245a8e8cc6ca);
+            
+        
+
+        circle_marker_8d74a8effeb7a0db5343cea44c397d76.bindPopup(popup_c43f0518f13dc0ddd17e8af93f34a9c0)
+        ;
+
+        
+    
+    
+            circle_marker_8d74a8effeb7a0db5343cea44c397d76.bindTooltip(
+                `<div>
+                     San Francisco — 534 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1932b7f2a71ea3940f4447ca363d85e4 = L.circleMarker(
+                [38.289517000000004, -121.90322649522912],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_14e01f8c512a35c108b972e644626b83 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_c5da35aedcb79638103b7fbae072ead6 = $(`<div id="html_c5da35aedcb79638103b7fbae072ead6" style="width: 100.0%; height: 100.0%;"><b>County:</b> Solano<br><b>Total Units:</b> 75</div>`)[0];
+                popup_14e01f8c512a35c108b972e644626b83.setContent(html_c5da35aedcb79638103b7fbae072ead6);
+            
+        
+
+        circle_marker_1932b7f2a71ea3940f4447ca363d85e4.bindPopup(popup_14e01f8c512a35c108b972e644626b83)
+        ;
+
+        
+    
+    
+            circle_marker_1932b7f2a71ea3940f4447ca363d85e4.bindTooltip(
+                `<div>
+                     Solano — 75 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_baa122b8fa5d443190c504254c794df1 = L.circleMarker(
+                [34.2762995, -118.1420484788029],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_88b8da67b897a422eb30991482cf1da0 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_19f186c357bddd49f5cf3e9a25470fb1 = $(`<div id="html_19f186c357bddd49f5cf3e9a25470fb1" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles<br><b>Total Units:</b> 9354</div>`)[0];
+                popup_88b8da67b897a422eb30991482cf1da0.setContent(html_19f186c357bddd49f5cf3e9a25470fb1);
+            
+        
+
+        circle_marker_baa122b8fa5d443190c504254c794df1.bindPopup(popup_88b8da67b897a422eb30991482cf1da0)
+        ;
+
+        
+    
+    
+            circle_marker_baa122b8fa5d443190c504254c794df1.bindTooltip(
+                `<div>
+                     Los Angeles — 9354 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a4372e94094e306ef79767a9d090118 = L.circleMarker(
+                [37.283137499999995, -119.62910208023938],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.88, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_be43d3e6c1780b77afa9ab6fe09046e4 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_35beeaba22651aeaf119cdb0d5aa30ac = $(`<div id="html_35beeaba22651aeaf119cdb0d5aa30ac" style="width: 100.0%; height: 100.0%;"><b>County:</b> Madera<br><b>Total Units:</b> 244</div>`)[0];
+                popup_be43d3e6c1780b77afa9ab6fe09046e4.setContent(html_35beeaba22651aeaf119cdb0d5aa30ac);
+            
+        
+
+        circle_marker_3a4372e94094e306ef79767a9d090118.bindPopup(popup_be43d3e6c1780b77afa9ab6fe09046e4)
+        ;
+
+        
+    
+    
+            circle_marker_3a4372e94094e306ef79767a9d090118.bindTooltip(
+                `<div>
+                     Madera — 244 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_336283dfd81e04c9e1b5ec6be6a8eca7 = L.circleMarker(
+                [38.0679935, -122.73369490691906],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_b52076ac2ab78a6f4443d2291ae79f02 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_536402c83c73e0502ad28b19c3d4499b = $(`<div id="html_536402c83c73e0502ad28b19c3d4499b" style="width: 100.0%; height: 100.0%;"><b>County:</b> Marin<br><b>Total Units:</b> 500</div>`)[0];
+                popup_b52076ac2ab78a6f4443d2291ae79f02.setContent(html_536402c83c73e0502ad28b19c3d4499b);
+            
+        
+
+        circle_marker_336283dfd81e04c9e1b5ec6be6a8eca7.bindPopup(popup_b52076ac2ab78a6f4443d2291ae79f02)
+        ;
+
+        
+    
+    
+            circle_marker_336283dfd81e04c9e1b5ec6be6a8eca7.bindTooltip(
+                `<div>
+                     Marin — 500 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04fb5850b0d049c226c93c920bb90344 = L.circleMarker(
+                [37.192299500000004, -120.60727708098258],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.42, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_13cbfa0815747219fce293e9f89905d5 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_943c272a2026f8783675babb1f509be5 = $(`<div id="html_943c272a2026f8783675babb1f509be5" style="width: 100.0%; height: 100.0%;"><b>County:</b> Merced<br><b>Total Units:</b> 421</div>`)[0];
+                popup_13cbfa0815747219fce293e9f89905d5.setContent(html_943c272a2026f8783675babb1f509be5);
+            
+        
+
+        circle_marker_04fb5850b0d049c226c93c920bb90344.bindPopup(popup_13cbfa0815747219fce293e9f89905d5)
+        ;
+
+        
+    
+    
+            circle_marker_04fb5850b0d049c226c93c920bb90344.bindTooltip(
+                `<div>
+                     Merced — 421 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfab7a9a8e2f41b8cbe53c668b577b77 = L.circleMarker(
+                [36.262293, -118.8239284560873],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.200000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_278d10a1b7119119817ee4aa51aaefb7 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_1c3442c57089bb76b53c553da2496983 = $(`<div id="html_1c3442c57089bb76b53c553da2496983" style="width: 100.0%; height: 100.0%;"><b>County:</b> Tulare<br><b>Total Units:</b> 710</div>`)[0];
+                popup_278d10a1b7119119817ee4aa51aaefb7.setContent(html_1c3442c57089bb76b53c553da2496983);
+            
+        
+
+        circle_marker_bfab7a9a8e2f41b8cbe53c668b577b77.bindPopup(popup_278d10a1b7119119817ee4aa51aaefb7)
+        ;
+
+        
+    
+    
+            circle_marker_bfab7a9a8e2f41b8cbe53c668b577b77.bindTooltip(
+                `<div>
+                     Tulare — 710 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0da052017c3159d240dcb9149fdf8f61 = L.circleMarker(
+                [33.026293, -115.35574576037939],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.280000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_340d199c2fb98530b8dffc3f7204c181 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_9ddcdbb311d35e5a4f4475bb44bbe696 = $(`<div id="html_9ddcdbb311d35e5a4f4475bb44bbe696" style="width: 100.0%; height: 100.0%;"><b>County:</b> Imperial<br><b>Total Units:</b> 764</div>`)[0];
+                popup_340d199c2fb98530b8dffc3f7204c181.setContent(html_9ddcdbb311d35e5a4f4475bb44bbe696);
+            
+        
+
+        circle_marker_0da052017c3159d240dcb9149fdf8f61.bindPopup(popup_340d199c2fb98530b8dffc3f7204c181)
+        ;
+
+        
+    
+    
+            circle_marker_0da052017c3159d240dcb9149fdf8f61.bindTooltip(
+                `<div>
+                     Imperial — 764 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa5e6f48ec3795a5b17483421e3c1d07 = L.circleMarker(
+                [37.611042999999995, -120.87669094968905],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.74, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_efd22e538cadd8199816221256d59895 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_794b28297da3f211f088a9feeca87c2c = $(`<div id="html_794b28297da3f211f088a9feeca87c2c" style="width: 100.0%; height: 100.0%;"><b>County:</b> Stanislaus<br><b>Total Units:</b> 737</div>`)[0];
+                popup_efd22e538cadd8199816221256d59895.setContent(html_794b28297da3f211f088a9feeca87c2c);
+            
+        
+
+        circle_marker_fa5e6f48ec3795a5b17483421e3c1d07.bindPopup(popup_efd22e538cadd8199816221256d59895)
+        ;
+
+        
+    
+    
+            circle_marker_fa5e6f48ec3795a5b17483421e3c1d07.bindTooltip(
+                `<div>
+                     Stanislaus — 737 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9eccf779a510a37ca3d6df981f10c5e1 = L.circleMarker(
+                [39.01599, -121.71032413315154],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_9cc37a35f52492f16ee2ea44a50b79dd = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_35eafc66ebe2e6ed7f991c8ae7d409b3 = $(`<div id="html_35eafc66ebe2e6ed7f991c8ae7d409b3" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sutter<br><b>Total Units:</b> 10</div>`)[0];
+                popup_9cc37a35f52492f16ee2ea44a50b79dd.setContent(html_35eafc66ebe2e6ed7f991c8ae7d409b3);
+            
+        
+
+        circle_marker_9eccf779a510a37ca3d6df981f10c5e1.bindPopup(popup_9cc37a35f52492f16ee2ea44a50b79dd)
+        ;
+
+        
+    
+    
+            circle_marker_9eccf779a510a37ca3d6df981f10c5e1.bindTooltip(
+                `<div>
+                     Sutter — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9472a3fa4303cf46662c0c1c2842cb55 = L.circleMarker(
+                [35.307224500000004, -118.72031361631537],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.62, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_7d723941fdf149af29eda049a1f81e7c = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_5d97acecd4c2c6c8de1d209d01776e9f = $(`<div id="html_5d97acecd4c2c6c8de1d209d01776e9f" style="width: 100.0%; height: 100.0%;"><b>County:</b> Kern<br><b>Total Units:</b> 231</div>`)[0];
+                popup_7d723941fdf149af29eda049a1f81e7c.setContent(html_5d97acecd4c2c6c8de1d209d01776e9f);
+            
+        
+
+        circle_marker_9472a3fa4303cf46662c0c1c2842cb55.bindPopup(popup_7d723941fdf149af29eda049a1f81e7c)
+        ;
+
+        
+    
+    
+            circle_marker_9472a3fa4303cf46662c0c1c2842cb55.bindTooltip(
+                `<div>
+                     Kern — 231 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7499fbba3c1229f0eab048bbd308746e = L.circleMarker(
+                [37.404940999999994, -122.30987802430803],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_7a89d2667f8d0edc47b3cfddeb0dffd5 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_175ddaa47fc8ed2f50c01abfbda93785 = $(`<div id="html_175ddaa47fc8ed2f50c01abfbda93785" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Mateo<br><b>Total Units:</b> 80</div>`)[0];
+                popup_7a89d2667f8d0edc47b3cfddeb0dffd5.setContent(html_175ddaa47fc8ed2f50c01abfbda93785);
+            
+        
+
+        circle_marker_7499fbba3c1229f0eab048bbd308746e.bindPopup(popup_7a89d2667f8d0edc47b3cfddeb0dffd5)
+        ;
+
+        
+    
+    
+            circle_marker_7499fbba3c1229f0eab048bbd308746e.bindTooltip(
+                `<div>
+                     San Mateo — 80 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9baf8339813228d3e5f011f720f74f0 = L.circleMarker(
+                [37.190532000000005, -121.72362440013825],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_58927753e4c17c71355df336f3d3d6cb = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_c8d24dbb3605fc18e91d908442ae1b2d = $(`<div id="html_c8d24dbb3605fc18e91d908442ae1b2d" style="width: 100.0%; height: 100.0%;"><b>County:</b> Santa Clara<br><b>Total Units:</b> 4</div>`)[0];
+                popup_58927753e4c17c71355df336f3d3d6cb.setContent(html_c8d24dbb3605fc18e91d908442ae1b2d);
+            
+        
+
+        circle_marker_f9baf8339813228d3e5f011f720f74f0.bindPopup(popup_58927753e4c17c71355df336f3d3d6cb)
+        ;
+
+        
+    
+    
+            circle_marker_f9baf8339813228d3e5f011f720f74f0.bindTooltip(
+                `<div>
+                     Santa Clara — 4 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad670641a5a1a86b449388d271da4650 = L.circleMarker(
+                [34.480515499999996, -119.08588528397294],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.02, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_61403678fe0e18a46385de6ee609362e = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_399b25596174a4020c0177a5a7cf5b14 = $(`<div id="html_399b25596174a4020c0177a5a7cf5b14" style="width: 100.0%; height: 100.0%;"><b>County:</b> Ventura<br><b>Total Units:</b> 1101</div>`)[0];
+                popup_61403678fe0e18a46385de6ee609362e.setContent(html_399b25596174a4020c0177a5a7cf5b14);
+            
+        
+
+        circle_marker_ad670641a5a1a86b449388d271da4650.bindPopup(popup_61403678fe0e18a46385de6ee609362e)
+        ;
+
+        
+    
+    
+            circle_marker_ad670641a5a1a86b449388d271da4650.bindTooltip(
+                `<div>
+                     Ventura — 1101 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c19f600bc18236c2549ae0bd3ae7a510 = L.circleMarker(
+                [38.620993, -121.85528837798671],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.64, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_25a00089fc1d6d4d4a34e5cf8754d1a5 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_11b7bbbd868af5605cf43c37b38dd131 = $(`<div id="html_11b7bbbd868af5605cf43c37b38dd131" style="width: 100.0%; height: 100.0%;"><b>County:</b> Yolo<br><b>Total Units:</b> 432</div>`)[0];
+                popup_25a00089fc1d6d4d4a34e5cf8754d1a5.setContent(html_11b7bbbd868af5605cf43c37b38dd131);
+            
+        
+
+        circle_marker_c19f600bc18236c2549ae0bd3ae7a510.bindPopup(popup_25a00089fc1d6d4d4a34e5cf8754d1a5)
+        ;
+
+        
+    
+    
+            circle_marker_c19f600bc18236c2549ae0bd3ae7a510.bindTooltip(
+                `<div>
+                     Yolo — 432 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86d9fa502dae9aabbae9d95f4ac4682d = L.circleMarker(
+                [36.159658500000006, -119.75835849773202],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.36, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_4500d80a6e930d67e286c313206a815a = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_d9f2205db555ede6af6087c16978eb28 = $(`<div id="html_d9f2205db555ede6af6087c16978eb28" style="width: 100.0%; height: 100.0%;"><b>County:</b> Kings<br><b>Total Units:</b> 268</div>`)[0];
+                popup_4500d80a6e930d67e286c313206a815a.setContent(html_d9f2205db555ede6af6087c16978eb28);
+            
+        
+
+        circle_marker_86d9fa502dae9aabbae9d95f4ac4682d.bindPopup(popup_4500d80a6e930d67e286c313206a815a)
+        ;
+
+        
+    
+    
+            circle_marker_86d9fa502dae9aabbae9d95f4ac4682d.bindTooltip(
+                `<div>
+                     Kings — 268 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23f1e1364b0a799ab10e2d1c002e2e02 = L.circleMarker(
+                [40.0231445, -120.80545257828987],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_134bda3a383a2d6316dd8f2d026b190a = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_ccc25c46dd7f83bd55a7034071f58e1a = $(`<div id="html_ccc25c46dd7f83bd55a7034071f58e1a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Plumas<br><b>Total Units:</b> 96</div>`)[0];
+                popup_134bda3a383a2d6316dd8f2d026b190a.setContent(html_ccc25c46dd7f83bd55a7034071f58e1a);
+            
+        
+
+        circle_marker_23f1e1364b0a799ab10e2d1c002e2e02.bindPopup(popup_134bda3a383a2d6316dd8f2d026b190a)
+        ;
+
+        
+    
+    
+            circle_marker_23f1e1364b0a799ab10e2d1c002e2e02.bindTooltip(
+                `<div>
+                     Plumas — 96 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3207c444258eddc537e305bcd649578 = L.circleMarker(
+                [38.417717999999994, -121.27567831467725],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_1f3cb950a0b88eb4ed9d138694ad21c8 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_6d52b9c6014558f97dfd4e5ed0a0756a = $(`<div id="html_6d52b9c6014558f97dfd4e5ed0a0756a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sacramento<br><b>Total Units:</b> 1902</div>`)[0];
+                popup_1f3cb950a0b88eb4ed9d138694ad21c8.setContent(html_6d52b9c6014558f97dfd4e5ed0a0756a);
+            
+        
+
+        circle_marker_e3207c444258eddc537e305bcd649578.bindPopup(popup_1f3cb950a0b88eb4ed9d138694ad21c8)
+        ;
+
+        
+    
+    
+            circle_marker_e3207c444258eddc537e305bcd649578.bindTooltip(
+                `<div>
+                     Sacramento — 1902 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7f6dfed9b0ac97c1458c24c184b890f = L.circleMarker(
+                [34.8346705, -116.1096145654138],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_36d1edb63ed576833c63d2614b600944 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_744a5899298a28899eb319e26fbeb0fc = $(`<div id="html_744a5899298a28899eb319e26fbeb0fc" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Bernardino<br><b>Total Units:</b> 53</div>`)[0];
+                popup_36d1edb63ed576833c63d2614b600944.setContent(html_744a5899298a28899eb319e26fbeb0fc);
+            
+        
+
+        circle_marker_f7f6dfed9b0ac97c1458c24c184b890f.bindPopup(popup_36d1edb63ed576833c63d2614b600944)
+        ;
+
+        
+    
+    
+            circle_marker_f7f6dfed9b0ac97c1458c24c184b890f.bindTooltip(
+                `<div>
+                     San Bernardino — 53 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea27d53fbccf0634f1f902b82a36e97a = L.circleMarker(
+                [37.893561, -121.24839207848709],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.22, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_6e03f1c2627a503a3f1915f32a45af54 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_fdf091400e5686ee816e859881c1aa9f = $(`<div id="html_fdf091400e5686ee816e859881c1aa9f" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Joaquin<br><b>Total Units:</b> 911</div>`)[0];
+                popup_6e03f1c2627a503a3f1915f32a45af54.setContent(html_fdf091400e5686ee816e859881c1aa9f);
+            
+        
+
+        circle_marker_ea27d53fbccf0634f1f902b82a36e97a.bindPopup(popup_6e03f1c2627a503a3f1915f32a45af54)
+        ;
+
+        
+    
+    
+            circle_marker_ea27d53fbccf0634f1f902b82a36e97a.bindTooltip(
+                `<div>
+                     San Joaquin — 911 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_116cf3cb01338772701e2a5f21f1317a.addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+            var circle_marker_66d824ebf141262f07b004d46c30de41 = L.circleMarker(
+                [37.6793585, -121.8650544887129],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_942c203fa7de6f659c513da85739b499 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_166115982fa204e80887bcb072e7718d = $(`<div id="html_166115982fa204e80887bcb072e7718d" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda<br><b>Total Units:</b> 1642</div>`)[0];
+                popup_942c203fa7de6f659c513da85739b499.setContent(html_166115982fa204e80887bcb072e7718d);
+            
+        
+
+        circle_marker_66d824ebf141262f07b004d46c30de41.bindPopup(popup_942c203fa7de6f659c513da85739b499)
+        ;
+
+        
+    
+    
+            circle_marker_66d824ebf141262f07b004d46c30de41.bindTooltip(
+                `<div>
+                     Alameda — 1642 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6fe50c196f88768f8bac3ec0d03633ef = L.circleMarker(
+                [39.7229885, -121.57913433615366],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.9, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_17827ecc0aa378cc53909939867d5eaf = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_dd38bfa598ee1aa88e8d17ed88f994aa = $(`<div id="html_dd38bfa598ee1aa88e8d17ed88f994aa" style="width: 100.0%; height: 100.0%;"><b>County:</b> Butte<br><b>Total Units:</b> 345</div>`)[0];
+                popup_17827ecc0aa378cc53909939867d5eaf.setContent(html_dd38bfa598ee1aa88e8d17ed88f994aa);
+            
+        
+
+        circle_marker_6fe50c196f88768f8bac3ec0d03633ef.bindPopup(popup_17827ecc0aa378cc53909939867d5eaf)
+        ;
+
+        
+    
+    
+            circle_marker_6fe50c196f88768f8bac3ec0d03633ef.bindTooltip(
+                `<div>
+                     Butte — 345 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39ba3c9f5f9301a565f881945689edcd = L.circleMarker(
+                [37.8881585, -121.91188039351027],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.72, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_76992d8cffd1cafdbb1df8d3e09097ae = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_cd81e03d8ddda1c60cae74e09199747f = $(`<div id="html_cd81e03d8ddda1c60cae74e09199747f" style="width: 100.0%; height: 100.0%;"><b>County:</b> Contra Costa<br><b>Total Units:</b> 1236</div>`)[0];
+                popup_76992d8cffd1cafdbb1df8d3e09097ae.setContent(html_cd81e03d8ddda1c60cae74e09199747f);
+            
+        
+
+        circle_marker_39ba3c9f5f9301a565f881945689edcd.bindPopup(popup_76992d8cffd1cafdbb1df8d3e09097ae)
+        ;
+
+        
+    
+    
+            circle_marker_39ba3c9f5f9301a565f881945689edcd.bindTooltip(
+                `<div>
+                     Contra Costa — 1236 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a0b241978cd39fb102ad1a76b849c4a = L.circleMarker(
+                [36.7476835, -119.63744423833671],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.78, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_c6b13a4d1a45c1928695c7e17a3d1771 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_c5c69a688c588ef1fa712852a7452539 = $(`<div id="html_c5c69a688c588ef1fa712852a7452539" style="width: 100.0%; height: 100.0%;"><b>County:</b> Fresno<br><b>Total Units:</b> 1139</div>`)[0];
+                popup_c6b13a4d1a45c1928695c7e17a3d1771.setContent(html_c5c69a688c588ef1fa712852a7452539);
+            
+        
+
+        circle_marker_2a0b241978cd39fb102ad1a76b849c4a.bindPopup(popup_c6b13a4d1a45c1928695c7e17a3d1771)
+        ;
+
+        
+    
+    
+            circle_marker_2a0b241978cd39fb102ad1a76b849c4a.bindTooltip(
+                `<div>
+                     Fresno — 1139 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee99d15ed0e0fdb25a5e996d64cd8075 = L.circleMarker(
+                [40.7344595, -123.87981815650701],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.96, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_656a803f5c44e94ff1fa26830f0fd70d = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_957bad4567b087e11138b93dc8f33947 = $(`<div id="html_957bad4567b087e11138b93dc8f33947" style="width: 100.0%; height: 100.0%;"><b>County:</b> Humboldt<br><b>Total Units:</b> 198</div>`)[0];
+                popup_656a803f5c44e94ff1fa26830f0fd70d.setContent(html_957bad4567b087e11138b93dc8f33947);
+            
+        
+
+        circle_marker_ee99d15ed0e0fdb25a5e996d64cd8075.bindPopup(popup_656a803f5c44e94ff1fa26830f0fd70d)
+        ;
+
+        
+    
+    
+            circle_marker_ee99d15ed0e0fdb25a5e996d64cd8075.bindTooltip(
+                `<div>
+                     Humboldt — 198 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c32787c7961e9a25727bee5de80ca01a = L.circleMarker(
+                [33.0214835, -116.69406851999491],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_131f7007dbb4f80889bd57a2b963df36 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_6c73c1597e8fc51e71bd92d7e2670112 = $(`<div id="html_6c73c1597e8fc51e71bd92d7e2670112" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Diego<br><b>Total Units:</b> 310</div>`)[0];
+                popup_131f7007dbb4f80889bd57a2b963df36.setContent(html_6c73c1597e8fc51e71bd92d7e2670112);
+            
+        
+
+        circle_marker_c32787c7961e9a25727bee5de80ca01a.bindPopup(popup_131f7007dbb4f80889bd57a2b963df36)
+        ;
+
+        
+    
+    
+            circle_marker_c32787c7961e9a25727bee5de80ca01a.bindTooltip(
+                `<div>
+                     San Diego — 310 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_868b5934a105c324f37f0c9c9670def0 = L.circleMarker(
+                [37.7578055, -122.44721107584681],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.68, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_f4dbf5de82597d83b43a2cfd09b1e96b = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_9e6be7005df33624d7c12b62d00f81be = $(`<div id="html_9e6be7005df33624d7c12b62d00f81be" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Francisco<br><b>Total Units:</b> 534</div>`)[0];
+                popup_f4dbf5de82597d83b43a2cfd09b1e96b.setContent(html_9e6be7005df33624d7c12b62d00f81be);
+            
+        
+
+        circle_marker_868b5934a105c324f37f0c9c9670def0.bindPopup(popup_f4dbf5de82597d83b43a2cfd09b1e96b)
+        ;
+
+        
+    
+    
+            circle_marker_868b5934a105c324f37f0c9c9670def0.bindTooltip(
+                `<div>
+                     San Francisco — 534 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b94d8d6a5551b3faa6f707ea4b132dcc = L.circleMarker(
+                [38.289517000000004, -121.90322649522912],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_a7e9a1674cce1b16880ed8fdd4a3c824 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_24b94f71598b0c7d3a95a2a2991cc373 = $(`<div id="html_24b94f71598b0c7d3a95a2a2991cc373" style="width: 100.0%; height: 100.0%;"><b>County:</b> Solano<br><b>Total Units:</b> 75</div>`)[0];
+                popup_a7e9a1674cce1b16880ed8fdd4a3c824.setContent(html_24b94f71598b0c7d3a95a2a2991cc373);
+            
+        
+
+        circle_marker_b94d8d6a5551b3faa6f707ea4b132dcc.bindPopup(popup_a7e9a1674cce1b16880ed8fdd4a3c824)
+        ;
+
+        
+    
+    
+            circle_marker_b94d8d6a5551b3faa6f707ea4b132dcc.bindTooltip(
+                `<div>
+                     Solano — 75 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e273cbfe5aea364e48fce1f1f7c674d = L.circleMarker(
+                [34.2762995, -118.1420484788029],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_0da24bc793a26db0c0da9565d7a42989 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_50e3974ec24c8684ef9ec1d14efd4bac = $(`<div id="html_50e3974ec24c8684ef9ec1d14efd4bac" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles<br><b>Total Units:</b> 9354</div>`)[0];
+                popup_0da24bc793a26db0c0da9565d7a42989.setContent(html_50e3974ec24c8684ef9ec1d14efd4bac);
+            
+        
+
+        circle_marker_5e273cbfe5aea364e48fce1f1f7c674d.bindPopup(popup_0da24bc793a26db0c0da9565d7a42989)
+        ;
+
+        
+    
+    
+            circle_marker_5e273cbfe5aea364e48fce1f1f7c674d.bindTooltip(
+                `<div>
+                     Los Angeles — 9354 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc6ed3e6e8cf2ec411821b6ad076bbcb = L.circleMarker(
+                [37.283137499999995, -119.62910208023938],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.88, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_b87ba1ac57116870ae1a807c8d7a8d2a = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_cacaac10f81658df4010fd079633b0ea = $(`<div id="html_cacaac10f81658df4010fd079633b0ea" style="width: 100.0%; height: 100.0%;"><b>County:</b> Madera<br><b>Total Units:</b> 244</div>`)[0];
+                popup_b87ba1ac57116870ae1a807c8d7a8d2a.setContent(html_cacaac10f81658df4010fd079633b0ea);
+            
+        
+
+        circle_marker_fc6ed3e6e8cf2ec411821b6ad076bbcb.bindPopup(popup_b87ba1ac57116870ae1a807c8d7a8d2a)
+        ;
+
+        
+    
+    
+            circle_marker_fc6ed3e6e8cf2ec411821b6ad076bbcb.bindTooltip(
+                `<div>
+                     Madera — 244 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b10531712215a260d6d368e91e8a7860 = L.circleMarker(
+                [38.0679935, -122.73369490691906],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_1d25cbe7f55efaf040901d6d28b8719a = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_9d736f279df327baea0e1642a9f1569d = $(`<div id="html_9d736f279df327baea0e1642a9f1569d" style="width: 100.0%; height: 100.0%;"><b>County:</b> Marin<br><b>Total Units:</b> 500</div>`)[0];
+                popup_1d25cbe7f55efaf040901d6d28b8719a.setContent(html_9d736f279df327baea0e1642a9f1569d);
+            
+        
+
+        circle_marker_b10531712215a260d6d368e91e8a7860.bindPopup(popup_1d25cbe7f55efaf040901d6d28b8719a)
+        ;
+
+        
+    
+    
+            circle_marker_b10531712215a260d6d368e91e8a7860.bindTooltip(
+                `<div>
+                     Marin — 500 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6663e5cde03b7581110c6a895c6525a = L.circleMarker(
+                [37.192299500000004, -120.60727708098258],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.42, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_5b5c3f0e0ec2272df7e369553e15215a = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_76fb4be69c75aa6060eca40e2650c1d2 = $(`<div id="html_76fb4be69c75aa6060eca40e2650c1d2" style="width: 100.0%; height: 100.0%;"><b>County:</b> Merced<br><b>Total Units:</b> 421</div>`)[0];
+                popup_5b5c3f0e0ec2272df7e369553e15215a.setContent(html_76fb4be69c75aa6060eca40e2650c1d2);
+            
+        
+
+        circle_marker_f6663e5cde03b7581110c6a895c6525a.bindPopup(popup_5b5c3f0e0ec2272df7e369553e15215a)
+        ;
+
+        
+    
+    
+            circle_marker_f6663e5cde03b7581110c6a895c6525a.bindTooltip(
+                `<div>
+                     Merced — 421 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a667df000755d94d50e769b8b54b2c64 = L.circleMarker(
+                [36.262293, -118.8239284560873],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.200000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_2a8211ce5038c76d1eea484d27313450 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_9ff5cd15c30e7b2adbdff7b2803e85e2 = $(`<div id="html_9ff5cd15c30e7b2adbdff7b2803e85e2" style="width: 100.0%; height: 100.0%;"><b>County:</b> Tulare<br><b>Total Units:</b> 710</div>`)[0];
+                popup_2a8211ce5038c76d1eea484d27313450.setContent(html_9ff5cd15c30e7b2adbdff7b2803e85e2);
+            
+        
+
+        circle_marker_a667df000755d94d50e769b8b54b2c64.bindPopup(popup_2a8211ce5038c76d1eea484d27313450)
+        ;
+
+        
+    
+    
+            circle_marker_a667df000755d94d50e769b8b54b2c64.bindTooltip(
+                `<div>
+                     Tulare — 710 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_782b9071336eb8de735f8f2434ae1941 = L.circleMarker(
+                [33.026293, -115.35574576037939],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.280000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_9f6ffd3f67708f0316b503aed83b5534 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_ad85fc6b05139eb20dcdc4d96025a923 = $(`<div id="html_ad85fc6b05139eb20dcdc4d96025a923" style="width: 100.0%; height: 100.0%;"><b>County:</b> Imperial<br><b>Total Units:</b> 764</div>`)[0];
+                popup_9f6ffd3f67708f0316b503aed83b5534.setContent(html_ad85fc6b05139eb20dcdc4d96025a923);
+            
+        
+
+        circle_marker_782b9071336eb8de735f8f2434ae1941.bindPopup(popup_9f6ffd3f67708f0316b503aed83b5534)
+        ;
+
+        
+    
+    
+            circle_marker_782b9071336eb8de735f8f2434ae1941.bindTooltip(
+                `<div>
+                     Imperial — 764 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5960b9faf4f826fa922c22a3274d7d80 = L.circleMarker(
+                [37.611042999999995, -120.87669094968905],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.74, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_1776eb334bd3d0615a8f5ef6adb2ca4a = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_dbca30faaca32c3cb95fd8972d18bd7c = $(`<div id="html_dbca30faaca32c3cb95fd8972d18bd7c" style="width: 100.0%; height: 100.0%;"><b>County:</b> Stanislaus<br><b>Total Units:</b> 737</div>`)[0];
+                popup_1776eb334bd3d0615a8f5ef6adb2ca4a.setContent(html_dbca30faaca32c3cb95fd8972d18bd7c);
+            
+        
+
+        circle_marker_5960b9faf4f826fa922c22a3274d7d80.bindPopup(popup_1776eb334bd3d0615a8f5ef6adb2ca4a)
+        ;
+
+        
+    
+    
+            circle_marker_5960b9faf4f826fa922c22a3274d7d80.bindTooltip(
+                `<div>
+                     Stanislaus — 737 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b77e28ab1b7d3f79e84f77056cde574 = L.circleMarker(
+                [39.01599, -121.71032413315154],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_85f54129a6cb288c7bcd030cb3a00662 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_8b10de3f73dad717601f64da2065b390 = $(`<div id="html_8b10de3f73dad717601f64da2065b390" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sutter<br><b>Total Units:</b> 10</div>`)[0];
+                popup_85f54129a6cb288c7bcd030cb3a00662.setContent(html_8b10de3f73dad717601f64da2065b390);
+            
+        
+
+        circle_marker_2b77e28ab1b7d3f79e84f77056cde574.bindPopup(popup_85f54129a6cb288c7bcd030cb3a00662)
+        ;
+
+        
+    
+    
+            circle_marker_2b77e28ab1b7d3f79e84f77056cde574.bindTooltip(
+                `<div>
+                     Sutter — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9cedc561a5b999e4c9b0458b2b75b483 = L.circleMarker(
+                [35.307224500000004, -118.72031361631537],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.62, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_7162921182b3587e84d0355da0ef6a9b = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_7987d26a07a8f74f480eafcd26af94c5 = $(`<div id="html_7987d26a07a8f74f480eafcd26af94c5" style="width: 100.0%; height: 100.0%;"><b>County:</b> Kern<br><b>Total Units:</b> 231</div>`)[0];
+                popup_7162921182b3587e84d0355da0ef6a9b.setContent(html_7987d26a07a8f74f480eafcd26af94c5);
+            
+        
+
+        circle_marker_9cedc561a5b999e4c9b0458b2b75b483.bindPopup(popup_7162921182b3587e84d0355da0ef6a9b)
+        ;
+
+        
+    
+    
+            circle_marker_9cedc561a5b999e4c9b0458b2b75b483.bindTooltip(
+                `<div>
+                     Kern — 231 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5739c1b7570af1888d4151fef7f1488d = L.circleMarker(
+                [37.404940999999994, -122.30987802430803],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_87e4198d114792073b1d803d66410b8f = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_04456a033490689b8f908ff8218f7be6 = $(`<div id="html_04456a033490689b8f908ff8218f7be6" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Mateo<br><b>Total Units:</b> 80</div>`)[0];
+                popup_87e4198d114792073b1d803d66410b8f.setContent(html_04456a033490689b8f908ff8218f7be6);
+            
+        
+
+        circle_marker_5739c1b7570af1888d4151fef7f1488d.bindPopup(popup_87e4198d114792073b1d803d66410b8f)
+        ;
+
+        
+    
+    
+            circle_marker_5739c1b7570af1888d4151fef7f1488d.bindTooltip(
+                `<div>
+                     San Mateo — 80 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d95f53d7c8af5d892a3c47a9e25db4fe = L.circleMarker(
+                [37.190532000000005, -121.72362440013825],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_2f104665a1c7f0e87523063c3c0c131d = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_df74f30311393a86e51e933b797afbdc = $(`<div id="html_df74f30311393a86e51e933b797afbdc" style="width: 100.0%; height: 100.0%;"><b>County:</b> Santa Clara<br><b>Total Units:</b> 4</div>`)[0];
+                popup_2f104665a1c7f0e87523063c3c0c131d.setContent(html_df74f30311393a86e51e933b797afbdc);
+            
+        
+
+        circle_marker_d95f53d7c8af5d892a3c47a9e25db4fe.bindPopup(popup_2f104665a1c7f0e87523063c3c0c131d)
+        ;
+
+        
+    
+    
+            circle_marker_d95f53d7c8af5d892a3c47a9e25db4fe.bindTooltip(
+                `<div>
+                     Santa Clara — 4 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a9beb3db26e915bccf10357a01bdfd6 = L.circleMarker(
+                [34.480515499999996, -119.08588528397294],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.02, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_81b8e6d625597bb693d12ace28480f30 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_2420339965f09730e883f418f4a070fe = $(`<div id="html_2420339965f09730e883f418f4a070fe" style="width: 100.0%; height: 100.0%;"><b>County:</b> Ventura<br><b>Total Units:</b> 1101</div>`)[0];
+                popup_81b8e6d625597bb693d12ace28480f30.setContent(html_2420339965f09730e883f418f4a070fe);
+            
+        
+
+        circle_marker_6a9beb3db26e915bccf10357a01bdfd6.bindPopup(popup_81b8e6d625597bb693d12ace28480f30)
+        ;
+
+        
+    
+    
+            circle_marker_6a9beb3db26e915bccf10357a01bdfd6.bindTooltip(
+                `<div>
+                     Ventura — 1101 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20f6472528712d68250411fc31fb2618 = L.circleMarker(
+                [38.620993, -121.85528837798671],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.64, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_aa4caf2a3181475925cf65ad86d1b029 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_da498298911e31c29a980647e34512ef = $(`<div id="html_da498298911e31c29a980647e34512ef" style="width: 100.0%; height: 100.0%;"><b>County:</b> Yolo<br><b>Total Units:</b> 432</div>`)[0];
+                popup_aa4caf2a3181475925cf65ad86d1b029.setContent(html_da498298911e31c29a980647e34512ef);
+            
+        
+
+        circle_marker_20f6472528712d68250411fc31fb2618.bindPopup(popup_aa4caf2a3181475925cf65ad86d1b029)
+        ;
+
+        
+    
+    
+            circle_marker_20f6472528712d68250411fc31fb2618.bindTooltip(
+                `<div>
+                     Yolo — 432 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9dad4c82f861f230210f4a1332826e3 = L.circleMarker(
+                [36.159658500000006, -119.75835849773202],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.36, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_840e4595dcfcc4a8c2fc01cbb5556566 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_b58adc0de718436b13e276f46fc95045 = $(`<div id="html_b58adc0de718436b13e276f46fc95045" style="width: 100.0%; height: 100.0%;"><b>County:</b> Kings<br><b>Total Units:</b> 268</div>`)[0];
+                popup_840e4595dcfcc4a8c2fc01cbb5556566.setContent(html_b58adc0de718436b13e276f46fc95045);
+            
+        
+
+        circle_marker_f9dad4c82f861f230210f4a1332826e3.bindPopup(popup_840e4595dcfcc4a8c2fc01cbb5556566)
+        ;
+
+        
+    
+    
+            circle_marker_f9dad4c82f861f230210f4a1332826e3.bindTooltip(
+                `<div>
+                     Kings — 268 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab1d6063d74fa0d353d2838daadc04cd = L.circleMarker(
+                [40.0231445, -120.80545257828987],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_01c88cd54a54165b94aacb605ff1aa22 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_423ff96f01588a7b589cb95a0b16bc38 = $(`<div id="html_423ff96f01588a7b589cb95a0b16bc38" style="width: 100.0%; height: 100.0%;"><b>County:</b> Plumas<br><b>Total Units:</b> 96</div>`)[0];
+                popup_01c88cd54a54165b94aacb605ff1aa22.setContent(html_423ff96f01588a7b589cb95a0b16bc38);
+            
+        
+
+        circle_marker_ab1d6063d74fa0d353d2838daadc04cd.bindPopup(popup_01c88cd54a54165b94aacb605ff1aa22)
+        ;
+
+        
+    
+    
+            circle_marker_ab1d6063d74fa0d353d2838daadc04cd.bindTooltip(
+                `<div>
+                     Plumas — 96 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ef0bb0453ae894903909794c158558e = L.circleMarker(
+                [38.417717999999994, -121.27567831467725],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_4da94fc31ff7aa501ef024d60b6cbd35 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_8bf99fffe7e098dabe5b529a6c97369b = $(`<div id="html_8bf99fffe7e098dabe5b529a6c97369b" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sacramento<br><b>Total Units:</b> 1902</div>`)[0];
+                popup_4da94fc31ff7aa501ef024d60b6cbd35.setContent(html_8bf99fffe7e098dabe5b529a6c97369b);
+            
+        
+
+        circle_marker_4ef0bb0453ae894903909794c158558e.bindPopup(popup_4da94fc31ff7aa501ef024d60b6cbd35)
+        ;
+
+        
+    
+    
+            circle_marker_4ef0bb0453ae894903909794c158558e.bindTooltip(
+                `<div>
+                     Sacramento — 1902 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07333c0ad54f624999676d0a4467f1b7 = L.circleMarker(
+                [34.8346705, -116.1096145654138],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_4166ce49dfda54883547d79947eb90d6 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_dec78112ad7f27340392bc23c77dc7a2 = $(`<div id="html_dec78112ad7f27340392bc23c77dc7a2" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Bernardino<br><b>Total Units:</b> 53</div>`)[0];
+                popup_4166ce49dfda54883547d79947eb90d6.setContent(html_dec78112ad7f27340392bc23c77dc7a2);
+            
+        
+
+        circle_marker_07333c0ad54f624999676d0a4467f1b7.bindPopup(popup_4166ce49dfda54883547d79947eb90d6)
+        ;
+
+        
+    
+    
+            circle_marker_07333c0ad54f624999676d0a4467f1b7.bindTooltip(
+                `<div>
+                     San Bernardino — 53 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9289296430af98cfaecd7cdfe8d9abf7 = L.circleMarker(
+                [37.893561, -121.24839207848709],
+                {"bubblingMouseEvents": true, "color": "#d7301f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.22, "stroke": true, "weight": 3}
+            ).addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+    
+        var popup_929c9cf25554d20721cdef79382a4396 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_a7c08584ba4828c044d36404b417bf78 = $(`<div id="html_a7c08584ba4828c044d36404b417bf78" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Joaquin<br><b>Total Units:</b> 911</div>`)[0];
+                popup_929c9cf25554d20721cdef79382a4396.setContent(html_a7c08584ba4828c044d36404b417bf78);
+            
+        
+
+        circle_marker_9289296430af98cfaecd7cdfe8d9abf7.bindPopup(popup_929c9cf25554d20721cdef79382a4396)
+        ;
+
+        
+    
+    
+            circle_marker_9289296430af98cfaecd7cdfe8d9abf7.bindTooltip(
+                `<div>
+                     San Joaquin — 911 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_116cf3cb01338772701e2a5f21f1317a.addTo(map_ef201b529082d1f2952c1434bd96e782);
+        
+</script>
+</html>
